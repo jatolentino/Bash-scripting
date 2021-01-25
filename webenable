@@ -1,0 +1,21 @@
+#!/usr/bin
+echo "Are you running as an admin, yes(y) or not(n)?. If not, please make sure you do and rerun this script later!"
+if [$1==y] ; then
+  yum install httpd
+  yum install wget
+  
+  echo "This is your website index" > /var/www/html/index.html
+  systemctl start httpd
+  systemctl enable httpd
+  firewall-cmd --permanent --add-service=http
+  firewall-cmd --permanent --add-service=https
+  
+  wget localhost
+  
+  echo "This is how your website looks like: "
+  cat ~/index.html
+  echo "Please refer to /home/`whoami`/index.html"
+  
+elif [$1==n] ; then
+  echo "Please Switch to a sudoer user, à bientôt!"
+ 
