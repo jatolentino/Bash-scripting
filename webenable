@@ -17,6 +17,6 @@ if [$varname=="y"] ; then
   cat ~/index.html
   echo "Please refer to /home/`whoami`/index.html"
   
-elif [$1==n] ; then
+elif [$varname=="n"] ; then
   echo "Please Switch to a sudoer user, à bientôt!"
  
