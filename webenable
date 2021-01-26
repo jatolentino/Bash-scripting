@@ -1,6 +1,7 @@
 #!/usr/bin
 echo "Are you running as an admin, yes(y) or not(n)?. If not, please make sure you do and rerun this script later!"
-if [$1==y] ; then
+read varname
+if [$varname==y] ; then
   yum install httpd
   yum install wget
   
