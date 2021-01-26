@@ -1,7 +1,7 @@
 #!/usr/bin
 echo "Are you running as an admin, yes(y) or not(n)?. If not, please make sure you do and rerun this script later!"
-read varname
-if [$varname=="y"] ; then
+read varAdm
+if [$varAdm=="y"] ; then
   yum install httpd
   yum install wget
   
@@ -17,6 +17,9 @@ if [$varname=="y"] ; then
   cat ~/index.html
   echo "Please refer to /home/`whoami`/index.html"
   
-elif [$varname=="n"] ; then
+elif [$varAdm=="n"] ; then
   echo "Please Switch to a sudoer user, à bientôt!"
- 
+  exit 0
+
+else
+   exit 0
