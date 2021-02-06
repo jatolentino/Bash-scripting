@@ -11,5 +11,4 @@ while read line
 do
   $line | grep -A 2 -B 2 -wn $2 && grep -wn $3 | echo "$(tput setaf 4)$(tput setab 6)$line$(tput sgr0)"
 done < $vare
-
   
