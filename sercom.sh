@@ -29,4 +29,6 @@ done < $vare
   #else
   #       echo "no"
   #fi
+  #$line | grep -A 2 -B 2 -wn $2 && grep -wn $3 | echo "$(tput setaf 4)$(tput setab 6)$line$(tput sgr0)"
+  #$line | grep -wne $2 -e $3 && echo "$(tput setaf 4)$(tput setab 6)$line$(tput sgr0)"
  
