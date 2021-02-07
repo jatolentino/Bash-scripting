@@ -17,3 +17,8 @@ done < $vare
 # Run as:
 # $ ./sercom.sh command 1ststring 2ndstring
 # e.g: ./sercom.sh selinux port tcp
+
+
+
+
+#$line | grep -wn $2 | grep -wn $3 && echo "$(tput setaf 4)$(tput setab 6)$line$(tput sgr0)"
