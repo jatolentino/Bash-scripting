@@ -19,7 +19,6 @@ done < $vare
 # e.g: ./sercom.sh selinux port tcp
 
 
-
 #$line | grep -wn $2 | grep -wn $3 && echo "$(tput setaf 4)$(tput setab 6)$line$(tput sgr0)"
   #$line | grep -A 2 -B 2 -wn $2 && echo "$(tput setaf 4)$(tput setab 6)$line$(tput sgr0)"
   #$line | grep -A 2 -B 2 '$2' && grep :'$3.\*$2' && echo "$(tput setaf 4)$(tput setab 6)$line$(tput sgr0)"
