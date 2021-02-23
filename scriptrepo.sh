@@ -7,3 +7,4 @@ baseurl= file:///rpm/BaseOS
 enabled = 0
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-release" > /etc/yum.repos.d/BaseOS.repo
+
