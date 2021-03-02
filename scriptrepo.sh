@@ -1,4 +1,5 @@
 #!/usr/bin
+mount /dev/sr0 /mnt
 mkdir /rpms
 cp -r /mnt/BaseOS.repo /rpms/ 
 echo "
