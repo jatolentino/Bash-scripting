@@ -1,6 +1,7 @@
-#!/usr/bin
+#!/bin/bash
 useradd wallah
-passwd wallah
+echo "passcontaineruser" | passwd --stdin wallah
+
 yum install - container-tools -y
 exit
 
