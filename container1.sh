@@ -12,7 +12,7 @@ sudo su
 
 cd /var/log
 mkdir journal
-systemctl systemd-journald.service
+systemctl restart systemd-journald.service
 cd journal
 ls
 exit
