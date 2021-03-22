@@ -1,8 +1,7 @@
 #!/bin/bash
 useradd wallah
 echo "passcontaineruser" | passwd --stdin wallah
-
-yum install - container-tools -y
+yum install container-tools -y
 exit
 
 ssh wallah@192.168.1.101
