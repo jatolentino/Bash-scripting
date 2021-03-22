@@ -25,5 +25,6 @@ podman ps
 mkdir ~/.config/systemd/user
 cd ~/.config/systemd/user
 podman generate systemd logserver > container-logserver.service
-vim container-logserver.service
-WantedBy=default.target
+# vim container-logserver.service
+# WantedBy=default.target
+sed -i "/WantedBy/a = default.target #" /container-logserver.service
