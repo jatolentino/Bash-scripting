@@ -19,7 +19,7 @@ exit
 
 mkdir ~/containter-logserver
 cp /var/log/ ~/contianer-logserver
-podman run -d --name logserver /home/wallah/container-logserver/:/var/log/:Z rsyslog
+podman run -d --name logserver -v /home/wallah/container-logserver/:/var/log/:Z rsyslog
 podman ps
 
 mkdir ~/.config/systemd/user
@@ -32,10 +32,10 @@ sed -i "/^WantedBy/a = default.target #" container-logserver.service
 systemctl --user daemon-reload
 podman container ls
 podman container stop logserver
-systemctl --user enable --now
+systemctl --user enable --now container-logserver.service
 loginctl enable-linger wallah
 login list-users
 init 6
 
 # ssh wallah@192.168.1.101
-podman ls
+podman container ls
