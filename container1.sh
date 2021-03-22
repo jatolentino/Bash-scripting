@@ -34,3 +34,8 @@ podman container ls
 podman container stop logserver
 systemctl --user enable --now
 loginctl enable-linger wallah
+login list-users
+init 6
+
+# ssh wallah@192.168.1.101
+podman ls
