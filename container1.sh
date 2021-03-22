@@ -6,6 +6,15 @@ exit
 
 ssh wallah@192.168.1.101
 podman login redhat.io.registry
-# include user and pass
+# input user and pass
 podman pull redhat.io.registry/rsyslog
+sudo su
+
+cd /var/log
+mkdir journal
+systemctl systemd-journald.service
+cd journal
+ls
+exit
+
 
