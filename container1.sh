@@ -5,9 +5,9 @@ yum install - container-tools -y
 exit
 
 ssh wallah@192.168.1.101
-podman login redhat.io.registry
+podman login registry.redhat.io
 # input user and pass
-podman pull redhat.io.registry/rsyslog
+podman pull registry.redhat.io/rsyslog
 sudo su
 
 cd /var/log
