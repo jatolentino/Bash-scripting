@@ -27,4 +27,10 @@ cd ~/.config/systemd/user
 podman generate systemd logserver > container-logserver.service
 # vim container-logserver.service
 # WantedBy=default.target
-sed -i "/WantedBy/a = default.target #" /container-logserver.service
+sed -i "/^WantedBy/a = default.target #" container-logserver.service
+
+systemctl --user daemon-reload
+podman container ls
+podman container stop logserver
+systemctl --user enable --now
+loginctl enable-linger wallah
