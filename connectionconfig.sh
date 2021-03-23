@@ -4,3 +4,4 @@ nmcli c reload
 ifconfig
 hostnamectl set-hostname node1-rhel.example.com
 hostnamectl
+init 6
