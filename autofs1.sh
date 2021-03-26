@@ -1,5 +1,5 @@
 #!/bin/bash
-# PC IP 192.168.1.101
+# PC IP 192.168.1.102
 yum install -y autofs* nfs-utils*
 systemctl restart nfs-server
 firewall-cmd --permanent --add-service={nfs,rpc-bind,mountd}
