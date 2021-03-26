@@ -1,4 +1,5 @@
 #!/bin/bash
+# PC IP 192.168.1.101
 # input the other pc IP, directory shared in autofs1.sh is /Dirshare
 yum install autofs* nfs-utils*
 showmount -e 192.168.1.102
