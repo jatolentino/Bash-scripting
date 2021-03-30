@@ -1,4 +1,4 @@
-#!/usr/bin
+#!/bin/bash
 echo "Are you running as an admin, yes(y) or not(n)?. If not, please make sure you do and rerun this script later!"
 read varAdm
 if [$varAdm=="y"] ; then
