@@ -5,7 +5,7 @@ if [$varAdm=="y"] ; then
   yum install httpd
   yum install wget
   
-  echo "This is your website index" > /var/www/html/index.html
+  echo "This is your website" > /var/www/html/index.html
   systemctl start httpd
   systemctl enable httpd
   firewall-cmd --permanent --add-service=http
