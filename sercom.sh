@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 #read commandToFind stringToFind
 touch /tmp/myCommand.txt
 vare=/tmp/myCommand.txt
