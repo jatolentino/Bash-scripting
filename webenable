@@ -20,6 +20,5 @@ if [$varAdm=="y"] ; then
 elif [$varAdm=="n"] ; then
   echo "Please Switch to a sudoer user, à bientôt!"
   exit 0
-
 else
    exit 0
