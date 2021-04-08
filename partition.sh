@@ -11,3 +11,4 @@ read sdSize
 (echo o; echo n; echo p; echo $sdNum; echo; echo +$sdSize; echo t; echo $sdNum; echo c; echo w) | fdisk /dev/$sdVar
 lsblk
 echo "Your device has been partitonated"
+fdisk -l /dev/$sdvar$sdNum
