@@ -10,7 +10,7 @@ echo "Please print the size you want your partition to be, ex 200M, 5G (no more 
 read sdSize
 (echo o; echo n; echo p; echo $sdNum; echo; echo +$sdSize; echo t; echo $sdNum; echo c; echo w) | fdisk /dev/$sdVar
 lsblk
-echo "Your device has been partitonated, please check the information below"
+echo "Your device has been partitonated, please verify the information of your device below"
 fdisk -l /dev/$sdvar$sdNum
 lsblk
 df -Th /dev/$sdvar$sdNum
