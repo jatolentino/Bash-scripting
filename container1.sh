@@ -7,8 +7,9 @@ exit
 ssh wallah@192.168.1.101
 podman login rhel8/registry.redhat.io
 # input user and pass
-podman pull registry.redhat.io/rsyslog
+podman pull rhel8/registry.redhat.io/rsyslog
 sudo su
+echo pass
 
 cd /var/log
 mkdir journal
