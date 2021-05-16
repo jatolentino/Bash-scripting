@@ -8,4 +8,3 @@ mkdir /Dirshare
 # add the other computer's ip
 echo "/Dirshare 192.168.1.101(rw,sync,no_root_squash)" > /etc/exports
 systemctl restart nfs-server
-
