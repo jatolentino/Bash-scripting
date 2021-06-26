@@ -18,6 +18,7 @@ cd journal
 ls
 exit
 
+
 mkdir ~/containter-logserver
 cp /var/log/ ~/contianer-logserver
 podman run -d --name logserver -v /home/wallah/container-logserver/:/var/log/:Z rsyslog
