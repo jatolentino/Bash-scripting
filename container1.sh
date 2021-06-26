@@ -4,7 +4,6 @@ echo "passcontaineruser" | passwd --stdin wallah
 yum install container-tools -y
 exit
 
-
 ssh wallah@192.168.1.101
 podman login rhel8/registry.redhat.io
 # input user and pass
